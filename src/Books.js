@@ -22,7 +22,7 @@ const Books = () => {
 
   const getBooks = () => {
     axios
-      .get("http://localhost:3001/books")
+      .get("/books")
       .then((response) => {
         let filteredBooks = response.data;
         if (search) {

@@ -13,7 +13,7 @@ function Main(){
     const[msginfo,setinfo]=useState("");
     const submit=()=>{
         console.log('hello');
-        axios.post("http://localhost:3001/add",{
+        axios.post("/add",{
             title:title,
             author:author,
             date:date,
