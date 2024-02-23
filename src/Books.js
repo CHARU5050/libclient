@@ -71,7 +71,7 @@ const Books = () => {
         <div className="search-box">
           <input
             type="text"
-            placeholder="search by name"
+            placeholder="search .."
             onChange={(e) => setSearch(e.target.value)}
           ></input>
         </div>
