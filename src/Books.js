@@ -27,7 +27,8 @@ const Books = () => {
         let filteredBooks = response.data;
         if (search) {
           filteredBooks = filteredBooks.filter((book) =>
-            book.title.toLowerCase().includes(search.toLowerCase())
+          book.title.toLowerCase().includes(search.toLowerCase())|| book.author.toLowerCase().includes(search.toLowerCase()) ||
+          book.date.includes(search) || book.subject.includes(search.toLowerCase())
           );
         }
         setBooks(filteredBooks);
