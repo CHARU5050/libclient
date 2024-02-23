@@ -3,6 +3,7 @@ import './App.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import moment from 'moment';
+import {Rating} from '@mui/material';
 
 const Books = () => {
   const [books, setBooks] = useState([]);
@@ -84,6 +85,7 @@ const Books = () => {
               <th>Author</th>
               <th>Subject</th>
               <th>Date</th>
+              <th> Rating</th>
             </tr>
           </thead>
           <tbody>
@@ -95,6 +97,7 @@ const Books = () => {
                   <td>{val.author}</td>
                   <td>{val.subject}</td>
                   <td>{formattedDate}</td>
+                  <td><Rating></Rating></td>
                 </tr>
               );
             })}
